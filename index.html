@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oqshom — mazali taomlar, iliq muhit va unutilmas uchrashuvlar.">
+  <title>Oqshom | Restoran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home"><span class="logo-mark">✦</span> OQSHOM</a>
+    <button class="menu-toggle" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Bosh sahifa</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#menu">Menyu</a>
+      <a href="#contact">Aloqa</a>
+      <a class="nav-cta" href="#booking">Stol band qilish</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> TA’M VA MUHIT UYG‘UNLIGI</p>
+        <h1>Har bir taomda<br><em>bir hikoya</em> bor.</h1>
+        <p class="hero-copy">Yangi masalliqlar, mehr bilan tayyorlangan taomlar va yaqinlaringiz bilan o‘tkaziladigan unutilmas lahzalar.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Menyuni ko‘rish <span>↗</span></a>
+          <a class="text-link" href="#about">Biz bilan tanishing</a>
+        </div>
+        <div class="hero-note"><strong>4.9/5</strong><span>Mehmonlarimiz bahosi</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div>
+        <div class="floating-card"><span>✦</span><div><strong>Har kuni yangi</strong><small>Tabiiy va sifatli masalliqlar</small></div></div>
+        <div class="round-stamp">MAZALI<br> • SAMIMIY •<br> OQSHOM</div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="feature"><span class="feature-icon">♨</span><div><h3>Yangi tayyorlanadi</h3><p>Har bir buyurtma siz uchun alohida tayyorlanadi.</p></div></div>
+      <div class="feature"><span class="feature-icon">✿</span><div><h3>Saralangan masalliq</h3><p>Ta’m va sifat uchun eng yaxshisini tanlaymiz.</p></div></div>
+      <div class="feature"><span class="feature-icon">♡</span><div><h3>Iliq mehmondo‘stlik</h3><p>O‘zingizni uydagidek his qilishingiz uchun.</p></div></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> BIZNING TANLOV</p><h2>Sevimli <em>ta’mlaringiz</em></h2></div>
+        <p>Oshpazimiz tavsiya qiladigan, ko‘p buyurtma beriladigan taomlar.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Menyu bo‘limlari">
+        <button class="filter active" data-filter="all">Barchasi</button>
+        <button class="filter" data-filter="main">Asosiy taomlar</button>
+        <button class="filter" data-filter="salad">Salatlar</button>
+        <button class="filter" data-filter="dessert">Shirinliklar</button>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card" data-category="main">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85" alt="O‘zbek palovi">
+          <div class="menu-card-body"><div class="card-title"><h3>An’anaviy palov</h3><strong>48 000 so‘m</strong></div><p>Mayin guruch, go‘sht, sabzi va xushbo‘y ziravorlar.</p><span class="tag">Eng mashhur</span></div>
+        </article>
+        <article class="menu-card" data-category="main">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Grilda pishirilgan go‘sht">
+          <div class="menu-card-body"><div class="card-title"><h3>Gril assorti</h3><strong>86 000 so‘m</strong></div><p>Ko‘mirda pishirilgan go‘sht va maxsus sous.</p><span class="tag">Oshpaz tavsiyasi</span></div>
+        </article>
+        <article class="menu-card" data-category="salad">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Yangi sabzavotli salat">
+          <div class="menu-card-body"><div class="card-title"><h3>Yashil salat</h3><strong>32 000 so‘m</strong></div><p>Mavsumiy ko‘katlar, sabzavotlar va yengil sous.</p><span class="tag">Yengil tanlov</span></div>
+        </article>
+        <article class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Shokoladli tort">
+          <div class="menu-card-body"><div class="card-title"><h3>Shokoladli tort</h3><strong>29 000 so‘m</strong></div><p>Yumshoq biskvit va nafis shokolad kremi.</p><span class="tag">Shirin yakun</span></div>
+        </article>
+        <article class="menu-card" data-category="main">
+          <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=900&q=85" alt="Lag‘mon">
+          <div class="menu-card-body"><div class="card-title"><h3>Uy lag‘moni</h3><strong>42 000 so‘m</strong></div><p>Qo‘lda cho‘zilgan xamir va sabzavotli qayla.</p><span class="tag">An’anaviy</span></div>
+        </article>
+        <article class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Mevali desert">
+          <div class="menu-card-body"><div class="card-title"><h3>Mevali desert</h3><strong>26 000 so‘m</strong></div><p>Mavsumiy mevalar va mayin yogurt kremi.</p><span class="tag">Yangi ta’m</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-copy"><p class="eyebrow"><span></span> SIZNI KUTAMIZ</p><h2>Yaxshi vaqt<br><em>birga boshlanadi.</em></h2><p>Oila davrasi, do‘stlar uchrashuvi yoki alohida kuningiz uchun stol band qiling.</p><div class="booking-detail">☎ &nbsp; +998 90 123 45 67</div></div>
+      <form class="booking-form" id="bookingForm">
+        <h3>Stol band qilish</h3>
+        <label>Ismingiz<input type="text" name="name" placeholder="Ismingizni kiriting" required></label>
+        <div class="form-row"><label>Sana<input type="date" name="date" id="bookingDate" required></label><label>Mehmonlar<input type="number" name="guests" min="1" max="20" value="2" required></label></div>
+        <label>Telefon raqamingiz<input type="tel" name="phone" placeholder="+998 __ ___ __ __" required></label>
+        <button class="button button-primary" type="submit">So‘rov yuborish <span>↗</span></button>
+        <p class="form-message" id="formMessage" aria-live="polite"></p>
+        <small>* Demo shakl: so‘rovingiz hozircha faqat shu sahifada tasdiqlanadi.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top"><a class="logo" href="#home"><span class="logo-mark">✦</span> OQSHOM</a><p>Yaxshi ta’m. Samimiy muhit.</p><div class="socials"><a href="#contact" aria-label="Instagram">ig</a><a href="#contact" aria-label="Telegram">tg</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Oqshom Restoran. Barcha huquqlar himoyalangan.</span><span>Toshkent shahri · Har kuni 10:00–23:00</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
